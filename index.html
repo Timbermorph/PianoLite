@@ -38,6 +38,7 @@
   figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 10px; }
   figcaption a { color: inherit; }
   p { margin: 0 0 14px; }
+  p.intro { margin-top: 36px; }
   .toggle { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 10px;
             font: 0.88rem/1.2 system-ui, sans-serif; }
   .toggle button { border: 1px solid var(--line); background: transparent; color: var(--fg);
@@ -66,8 +67,7 @@
     <figcaption>From silent video alone, PianoLite recovers the notes and the finger that plays each of them. Top: reference and predicted piano rolls for a 3.3&nbsp;s segment from the PianoVid-R test set. Bottom: the video frame at the dashed line, each pressed key labeled with its predicted finger (blue: left hand, red: right hand), and the same notes in notation.</figcaption>
   </figure>
 
-  <h2>Abstract</h2>
-  <p>Video recordings of piano playing make it possible to infer both which notes are sounding and which fingers are playing them. However, data for this task remains limited. We introduce PianoVid-R, a dataset of video recordings from 80 pianists, paired with synchronized recorded MIDI and finger labels derived from the video. Furthermore, we propose a model that jointly predicts the notes played and the corresponding fingers, both from visual information alone. Our framework preserves key-level features throughout the network, so that the same features yield both predictions. On PianoVid-R, our framework achieves more accurate piano transcription and finger recognition than existing frameworks. For transcription, it also generalizes better than the strongest visual baseline to unseen pianos.</p>
+  <p class="intro">A camera above the keyboard sees both what a pianist plays and how: which keys go down, and which finger presses each one. We want a model that reads both from silent video, without a microphone or MIDI. Two things were missing. First, there was little video in which both the notes and the fingers are labeled, so we recorded PianoVid-R: 80 pianists on a Disklavier, filmed from above, with the MIDI taken directly from the instrument and finger labels for almost every note derived from the video. Second, visual transcription models usually squeeze each frame into one feature vector before predicting notes, which loses track of which part of the image belongs to which key, exactly the information needed to tell fingers apart. PianoLite keeps one feature per key throughout the network, and the same features give both the notes and the fingers. It transcribes more accurately than earlier visual methods, recognizes the finger for each note, and copes better with pianos it has never seen.</p>
 
   <h2>Notes and fingers from silent video</h2>
   <figure>
