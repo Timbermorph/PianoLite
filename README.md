@@ -1,6 +1,6 @@
 # PianoLite and PianoVid-R
 
-Project page for *Key-Aligned Model for Visual Piano Transcription and Piano Fingering Recognition*
+Project page for *A Video Dataset and Key-Aligned Model for Visual Piano Transcription and Fingering Recognition*
 (Jianzhe Liu, Danqing Chen, Inken Grüner, A. Sophia Koepke).
 
 Page: https://timbermorph.github.io/PianoLite/

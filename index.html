@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PianoLite and PianoVid-R</title>
-<meta name="description" content="Key-aligned model for visual piano transcription and piano fingering recognition, and the PianoVid-R dataset of 80 pianists.">
+<meta name="description" content="A Video Dataset and Key-Aligned Model for Visual Piano Transcription and Fingering Recognition: the PianoVid-R dataset of 80 pianists and the key-aligned PianoLite model.">
 <style>
   :root {
     --bg: #ffffff; --fg: #1d2330; --muted: #5b6475; --line: #e3e6ec;
@@ -50,7 +50,7 @@
 </head>
 <body>
 <main>
-  <h1>Key-Aligned Model for Visual Piano Transcription and Piano Fingering Recognition</h1>
+  <h1>A Video Dataset and Key-Aligned Model for Visual Piano Transcription and Fingering Recognition</h1>
   <p class="authors">Jianzhe Liu<sup>*,1,2</sup> &nbsp; Danqing Chen<sup>*,1,2</sup> &nbsp; Inken Grüner<sup>1</sup> &nbsp; A. Sophia Koepke<sup>1,2,3</sup></p>
   <p class="affil"><sup>1</sup>Technical University of Munich &nbsp; <sup>2</sup>MCML &nbsp; <sup>3</sup>University of Tübingen, Tübingen AI Center</p>
   <p class="note">* Equal contribution</p>
@@ -67,7 +67,7 @@
   </figure>
 
   <h2>Abstract</h2>
-  <p>Video recordings of piano playing make it possible to infer both which notes are sounding and which fingers are playing them. However, data for this task remains limited. We introduce PianoVid-R, a dataset of video recordings from 80 pianists, paired with synchronized recorded MIDI and finger labels derived from the video. Furthermore, we propose a model that jointly predicts the notes played and the corresponding fingers, both from visual information alone. Our framework preserves key-level features throughout the network, so that the same features yield both predictions. On PianoVid-R, our framework achieves more accurate piano transcription and finger recognition than existing frameworks. After pretraining, it also transfers well to different pianos.</p>
+  <p>Video recordings of piano playing make it possible to infer both which notes are sounding and which fingers are playing them. However, data for this task remains limited. We introduce PianoVid-R, a dataset of video recordings from 80 pianists, paired with synchronized recorded MIDI and finger labels derived from the video. Furthermore, we propose a model that jointly predicts the notes played and the corresponding fingers, both from visual information alone. Our framework preserves key-level features throughout the network, so that the same features yield both predictions. On PianoVid-R, our framework achieves more accurate piano transcription and finger recognition than existing frameworks. For transcription, it also generalizes far better than the strongest visual baseline to unseen pianos.</p>
 
   <h2>Notes and fingers from silent video</h2>
   <figure>
